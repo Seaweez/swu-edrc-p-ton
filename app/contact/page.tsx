@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail, Twitter } from "lucide-react";
+import { Facebook, Mail, Twitter } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -18,10 +18,10 @@ const socials = [
 		handle: "dev@chronark.com",
 	},
 	{
-		icon: <Github size={20} />,
-		href: "https://github.com/chronark",
-		label: "Github",
-		handle: "chronark",
+		icon: <Facebook size={20} />,
+		href: "https://www.facebook.com/MomickeyoM",
+		label: "Facebook",
+		handle: "MomickeyoM",
 	},
 ];
 
