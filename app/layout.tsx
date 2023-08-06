@@ -6,16 +6,16 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "TonMickey.com",
-		template: "%s | TonMickey.com",
+		default: "Encoding to Digital Resilience Code",
+		template: "%s | Encoding to Digital Resilience Code",
 	},
 	description: "Software engineer at upstash.com and founder of planetfall.io",
 	openGraph: {
-		title: "TonMickey.com",
+		title: "Encoding to Digital Resilience Code",
 		description:
 			"Software engineer at upstash.com and founder of planetfall.io",
-		url: "https://TonMickey.com",
-		siteName: "TonMickey.com",
+		url: "https://Encoding to Digital Resilience Code",
+		siteName: "Encoding to Digital Resilience Code",
 		images: [
 			{
 				url: "https://chronark.com/og.png",
