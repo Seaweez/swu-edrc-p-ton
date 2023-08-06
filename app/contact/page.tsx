@@ -19,7 +19,7 @@ const socials = [
 	},
 	{
 		icon: <Facebook size={20} />,
-		href: "https://www.facebook.com/MomickeyoM",
+		href: "https://www.facebook.com/EncodingtoDigitalResilienceCode?mibextid=LQQJ4d",
 		label: "Facebook",
 		handle: "MomickeyoM",
 	},

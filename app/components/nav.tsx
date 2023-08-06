@@ -35,13 +35,13 @@ export const Navigation: React.FC = () => {
 							E-Book
 						</Link>
 						<Link
-							href="/ebook"
+							href="/boardgame"
 							className="duration-200 text-white hover:text-zinc-400 hover:underline"
 						>
 							Board Game
 						</Link>
 						<Link
-							href="/ebook"
+							href="/video"
 							className="duration-200 text-white hover:text-zinc-400 hover:underline"
 						>
 							Video
