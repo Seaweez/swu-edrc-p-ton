@@ -29,22 +29,34 @@ export const Navigation: React.FC = () => {
 				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
 					<div className="flex justify-between gap-8">
 						<Link
-							href="/projects"
-							className="duration-200 text-zinc-400 hover:text-zinc-100"
+							href="/ebook"
+							className="duration-200 text-white hover:text-zinc-400 hover:underline"
 						>
-							Projects
+							E-Book
 						</Link>
 						<Link
+							href="/ebook"
+							className="duration-200 text-white hover:text-zinc-400 hover:underline"
+						>
+							Board Game
+						</Link>
+						<Link
+							href="/ebook"
+							className="duration-200 text-white hover:text-zinc-400 hover:underline"
+						>
+							Video
+						</Link>
+						{/* <Link
 							href="/contact"
-							className="duration-200 text-zinc-400 hover:text-zinc-100"
+							className="duration-200 text-white hover:text-zinc-400 hover:underline"
 						>
 							Contact
-						</Link>
+						</Link> */}
 					</div>
 
 					<Link
 						href="/"
-						className="duration-200 text-zinc-300 hover:text-zinc-100"
+						className="duration-200 text-zinc-300 hover:text-zinc-400 hover:underline"
 					>
 						<ArrowLeft className="w-6 h-6 " />
 					</Link>
