@@ -16,19 +16,19 @@ const VIDEO_LIST = true ? [] : [
 ]
 
 const ARTICLE_LIST = true ? [] : [
-	{ title: `Chapter-01`, description: `ตอนที่ 1 เกมส์ออนไลน์`, download: `https://drive.google.com/file/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN=s320-w320-h200-k-p` },
-	{ title: `Chapter-02`, description: `โดนหลอกเข้าแล้วเรา`, download: `https://drive.google.com/file/d/1ZMSmeSdHqqTDG1M7XaltaZD5lm7rUZvY/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1ZMSmeSdHqqTDG1M7XaltaZD5lm7rUZvY=s320-w320-h200-k-p` },
-	{ title: `Chapter-03`, description: `สงครามโซเชียล`, download: `https://drive.google.com/file/d/1BXSCTFpkkO83Pd3Jg7ZY7dWKfu1W1Krq/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1BXSCTFpkkO83Pd3Jg7ZY7dWKfu1W1Krq=s320-w320-h200-k-p` },
-	{ title: `Chapter-04`, description: `ยุทธการปราบข่าวปลอม`, download: `https://drive.google.com/file/d/12vuz_NCIBLgTDDaGJEsRPspIn25KkkEo/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/12vuz_NCIBLgTDDaGJEsRPspIn25KkkEo=s320-w320-h200-k-p` },
-	{ title: `Chapter-05`, description: `ฮีโร่ดิจิทัล ใครๆ ก็เป็นได้`, download: `https://drive.google.com/file/d/15Hj0VSPB9jqTfw6NuO9kvOYnSx0Xr_fG/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/15Hj0VSPB9jqTfw6NuO9kvOYnSx0Xr_fG=s320-w320-h200-k-p` }
+	{ title: `Chapter-01`, description: `ตอนที่ 1 เกมส์ออนไลน์`, download: `https://drive.google.com/file/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN=s320-w320-h200-k-p`, views: 1023 },
+	{ title: `Chapter-02`, description: `โดนหลอกเข้าแล้วเรา`, download: `https://drive.google.com/file/d/1ZMSmeSdHqqTDG1M7XaltaZD5lm7rUZvY/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1ZMSmeSdHqqTDG1M7XaltaZD5lm7rUZvY=s320-w320-h200-k-p`, views: 1412 },
+	{ title: `Chapter-03`, description: `สงครามโซเชียล`, download: `https://drive.google.com/file/d/1BXSCTFpkkO83Pd3Jg7ZY7dWKfu1W1Krq/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1BXSCTFpkkO83Pd3Jg7ZY7dWKfu1W1Krq=s320-w320-h200-k-p`, views: 877 },
+	{ title: `Chapter-04`, description: `ยุทธการปราบข่าวปลอม`, download: `https://drive.google.com/file/d/12vuz_NCIBLgTDDaGJEsRPspIn25KkkEo/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/12vuz_NCIBLgTDDaGJEsRPspIn25KkkEo=s320-w320-h200-k-p`, views: 673 },
+	{ title: `Chapter-05`, description: `ฮีโร่ดิจิทัล ใครๆ ก็เป็นได้`, download: `https://drive.google.com/file/d/15Hj0VSPB9jqTfw6NuO9kvOYnSx0Xr_fG/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/15Hj0VSPB9jqTfw6NuO9kvOYnSx0Xr_fG=s320-w320-h200-k-p`, views: 1223 }
 ]
 
 
 const BOARDGAME_LIST = [
 	// { title: `E-Social Immunity`, description: `ภูมิคุ้มกันโลกดิจิทัล`, download: `https://drive.google.com/file/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN=s320-w320-h200-k-p` },
-	{ title: `E-Social Immunity Manual`, description: `คู่มือ ภูมิคุ้มกันโลกดิจิทัล`, src: `/esocial-manual.jpeg`, googleDrive: `https://drive.google.com/file/d/1vVPGCpxgAwrf_pWguqKHWfyAIO-jQ2zz/view` },
-	{ title: `E-Social Vaccine Card`, description: `Card วัคซีน สำหรับ E-Social Immunity `, src: `/situation-card.jpeg`, googleDrive: `https://drive.google.com/file/d/1GA_iqqpgJ0YQ4IqIn93ggv-syCpY3t7V/view?usp=sharing` },
-	{ title: `E-Social Situation Card`, description: `Card สถานการณ์ สำหรับ E-Social Immunity`, src: `/vaccine-card.jpeg`, googleDrive: `https://drive.google.com/file/d/16NSVg7zUpAIxd9rknKv94DrK0NR9Zaio/view?usp=sharing` },
+	{ title: `E-Social Immunity Manual`, description: `คู่มือ ภูมิคุ้มกันโลกดิจิทัล`, src: `/esocial-manual.jpeg`, googleDrive: `https://drive.google.com/file/d/1vVPGCpxgAwrf_pWguqKHWfyAIO-jQ2zz/view`, views: 343 },
+	{ title: `E-Social Vaccine Card`, description: `Card วัคซีน สำหรับ E-Social Immunity `, src: `/situation-card.jpeg`, googleDrive: `https://drive.google.com/file/d/1GA_iqqpgJ0YQ4IqIn93ggv-syCpY3t7V/view?usp=sharing`, views: 343 },
+	{ title: `E-Social Situation Card`, description: `Card สถานการณ์ สำหรับ E-Social Immunity`, src: `/vaccine-card.jpeg`, googleDrive: `https://drive.google.com/file/d/16NSVg7zUpAIxd9rknKv94DrK0NR9Zaio/view?usp=sharing`, views: 343 },
 ]
 
 const redis = Redis.fromEnv();
@@ -108,9 +108,14 @@ export default async function ProjectsPage() {
 										<svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
 										<Link href={`${video.googleDrive}`} className="text-white" target="_blank" download>
 											<span>Download</span>
+											<span className="text-white text-xs  flex items-center gap-1">
+												<Eye className="w-4 h-4" />{" "}
+												{Intl.NumberFormat("en-US", { notation: "compact" }).format(video.views)}
+											</span>
 										</Link>
 									</button>
 								</div>
+
 
 							</Card>
 							{/* <Link href="/files/myfile.pdf" target="_blank" download>Download</Link> */}
@@ -137,7 +142,7 @@ export default async function ProjectsPage() {
 									<img alt="Chapter-01.pdf" className="irnPqc" src={`${project.preview}`} data-iml="91125.90000000037" data-atf="true"></img>
 								</div>
 
-								<Article project={project} views={888} />
+								<Article project={project} views={project.views} />
 							</Card>
 						</div>
 					))}
