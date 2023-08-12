@@ -36,7 +36,7 @@ const campaignDescription = `เคล็ดลับ วิธีเอาต�
 
 export default function Home() {
 	return (
-		<div className="flex flex-col items-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-white via-zinc-600/20 to-white">
+		<div className="flex flex-col items-center w-screen xl:h-screen overflow-hidden bg-gradient-to-tl from-white via-zinc-600/20 to-white px-2 lg:px-0 align-middle">
 			<nav className="my-16 animate-fade-in">
 				<ul className="flex items-center justify-center gap-4">
 					{navigation.map((item) => (
@@ -55,17 +55,19 @@ export default function Home() {
 				className="absolute inset-0 -z-10 animate-fade-in"
 				quantity={100}
 			/>
-			{/* <h1 className="z-10 text-4xl  text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
-			MomickeyoM
-			</h1> */}
+			<h1 className="z-10 text-4xl  text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+			SWU - EDRC
+			</h1>
 
 			{/* <div className="flex justify-center mt-8">
 				<img alt="Chapter-01.pdf" className="irnPqc" style={{ height: `10rem` }} src={`${`/esocial-manual.jpeg`}`} data-iml="91125.90000000037" data-atf="true"></img>
 			</div> */}
 
-			<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-3 mt-40">
-				<img alt="Loading .." className="irnPqc" style={{ height: `10rem` }} src={`${`/eiei.jpg`}`} data-iml="91125.90000000037" data-atf="true"></img>
-				<img alt="Loading .." className="irnPqc" style={{ height: `10rem` }} src={`${`/msv.png`}`} data-iml="91125.90000000037" data-atf="true"></img>
+			<div className="grid grid-cols-1 gap-8 mx-auto mt-14 lg:grid-cols-3 z-10 text-4xl  text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text">
+				<img alt="Loading .." className="irnPqc" style={{ height: `10rem` }} src={`${`/eiei.png`}`} data-iml="91125.90000000037" data-atf="true"></img>
+				{/* <div className="text-center"> */}
+				<img alt="Loading .." className="irnPqc mx-auto" style={{ height: `10rem` }} src={`${`/msv.png`}`} data-iml="91125.90000000037" data-atf="true"></img>
+				{/* </div> */}
 				<img alt="Loading .." className="irnPqc" style={{ height: `10rem` }} src={`${`/tmf.png`}`} data-iml="91125.90000000037" data-atf="true"></img>
 			</div>
 
@@ -101,11 +103,11 @@ export default function Home() {
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16"> */}
 					{socials.map((s) => (
 						// <Card>
-							<div className="w-full px-10 text-right ">
+							<div className="w-full px-2 xl:px-4 text-righ fixed bottom">
 								<Link
 								href={s.href}
 								target="_blank"
-								className="p-4 relative float-right flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
+								className="float-right py-4"
 							>
 								{/* <span
 									className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
