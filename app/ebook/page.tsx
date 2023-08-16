@@ -62,7 +62,7 @@ export default async function ProjectsPage() {
 						E-Book(s)
 					</h2>
 					<p className="mt-4 text-white">
-						Some of the projects are from work and some are on my own time.
+						These are electronic books which could help you develop your Social-Vaccine.
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
