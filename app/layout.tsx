@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "Encoding to Digital Resilience Code",
-		template: "%s | Encoding to Digital Resilience Code",
+		default: "EDRC by SWU",
+		template: "%s | EDRC by SWU",
 	},
-	description: "Software engineer at upstash.com and founder of planetfall.io",
+	description: "เคล็ดลับ วิธีเอาตัวรอด ในโลกยุคใหม่! กับสังคมดิจิทัล หรือสื่อออนไลน์ต่างๆ พร้อมทำความเข้าใจ และจำลองสถานการณ์ของ พฤติกรรม ในเชิงลึก",
 	openGraph: {
-		title: "Encoding to Digital Resilience Code",
+		title: "EDRC by SWU",
 		description:
 			"Software engineer at upstash.com and founder of planetfall.io",
-		url: "https://Encoding to Digital Resilience Code",
-		siteName: "Encoding to Digital Resilience Code",
+		url: "https://EDRC by SWU",
+		siteName: "EDRC by SWU",
 		images: [
 			{
-				url: "https://chronark.com/og.png",
+				url: "/msv.png",
 				width: 1920,
 				height: 1080,
 			},
