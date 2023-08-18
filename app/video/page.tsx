@@ -126,7 +126,7 @@ export default async function ProjectsPage() {
 						<div className="grid grid-cols-1 gap-4">
 							<Card key={project.title}>
 								<div className="flex justify-center mt-8">
-									<img alt="Chapter-01.pdf" className="irnPqc" src={`${project.preview}`} data-iml="91125.90000000037" data-atf="true"></img>
+									<img alt={`${project.title}`} className="irnPqc" src={`${project.preview}`} data-iml="91125.90000000037" data-atf="true"></img>
 								</div>
 
 								<Article project={project} views={888} />

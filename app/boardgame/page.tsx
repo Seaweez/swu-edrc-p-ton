@@ -87,30 +87,30 @@ export default async function ProjectsPage() {
 						>
 						</iframe>
 					</Card> */}
-					{BOARDGAME_LIST.map(video => video && (
+					{BOARDGAME_LIST.map(boardgame => boardgame && (
 						<div className="flex py-auto text-center">
 							<Card>
 								<div className="text-white header py-5">
 									<div className="1">
-										<p className="title">{video.title}</p>
+										<p className="title">{boardgame.title}</p>
 									</div>
 									<div className="1">
-										<p className="title">{video.description}</p>
+										<p className="title">{boardgame.description}</p>
 									</div>
 								</div>
 
 								<div className="flex justify-center mt-8">
-									<img alt="Chapter-01.pdf" className="irnPqc" src={`${video.src}`} data-iml="91125.90000000037" data-atf="true"></img>
+									<img alt={`${boardgame.title}`} className="irnPqc" src={`${boardgame.src}`} data-iml="91125.90000000037" data-atf="true"></img>
 								</div>
 
 								<div className="my-3">
 									<button className="bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center">
 										<svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
-										<Link href={`${video.googleDrive}`} className="text-white" target="_blank" download>
+										<Link href={`${boardgame.googleDrive}`} className="text-white" target="_blank" download>
 											<span>Download</span>
 											<span className="text-white text-xs  flex items-center gap-1">
 												<Eye className="w-4 h-4" />{" "}
-												{Intl.NumberFormat("en-US", { notation: "compact" }).format(video.views)}
+												{Intl.NumberFormat("en-US", { notation: "compact" }).format(boardgame.views)}
 											</span>
 										</Link>
 									</button>
