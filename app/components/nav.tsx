@@ -45,12 +45,12 @@ export const Navigation: React.FC = () => {
 						>
 							Video
 						</Link>
-						{/* <Link
-							href="/contact"
-							className="duration-200 text-white hover:text-zinc-400 hover:underline"
+						<Link
+							href="https://docs.google.com/document/d/1XuEMUjtTAFkzJ6rl-460VGIPcHKReIeb/edit?usp=sharing&ouid=110703871501540382178&rtpof=true&sd=true"
+							className="duration-200 text-black hover:text-zinc-400 hover:underline"
 						>
-							Contact
-						</Link> */}
+							Questionaire
+						</Link>
 					</div>
 
 					<Link

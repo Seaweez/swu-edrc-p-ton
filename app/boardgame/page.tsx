@@ -26,7 +26,7 @@ const ARTICLE_LIST = true ? [] : [
 
 const BOARDGAME_LIST = [
 	// { title: `E-Social Immunity`, description: `ภูมิคุ้มกันโลกดิจิทัล`, download: `https://drive.google.com/file/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN=s320-w320-h200-k-p` },
-	{ title: `E-Social Immunity Manual`, description: `คู่มือ ภูมิคุ้มกันโลกดิจิทัล`, src: `/esocial-manual.jpeg`, googleDrive: `https://drive.google.com/file/d/1vVPGCpxgAwrf_pWguqKHWfyAIO-jQ2zz/view`, views: 343 },
+	{ title: `E-Social Immunity Manual`, description: `คู่มือ ภูมิคุ้มกันโลกดิจิทัล`, src: `/esocial-manual.jpeg`, googleDrive: `https://drive.google.com/file/d/1hK-Jg8q_FINqi7sKDNovfuvotaLiEra1/view?usp=sharing`, views: 343 },
 	{ title: `E-Social Vaccine Card`, description: `Card วัคซีน สำหรับ E-Social Immunity `, src: `/situation-card.jpeg`, googleDrive: `https://drive.google.com/file/d/1GA_iqqpgJ0YQ4IqIn93ggv-syCpY3t7V/view?usp=sharing`, views: 343 },
 	{ title: `E-Social Situation Card`, description: `Card สถานการณ์ สำหรับ E-Social Immunity`, src: `/vaccine-card.jpeg`, googleDrive: `https://drive.google.com/file/d/16NSVg7zUpAIxd9rknKv94DrK0NR9Zaio/view?usp=sharing`, views: 343 },
 ]
