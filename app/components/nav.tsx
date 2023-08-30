@@ -46,7 +46,7 @@ export const Navigation: React.FC = () => {
 							Video
 						</Link>
 						<Link
-							href="https://drive.google.com/file/d/139UEhRgRGhGfyCrt54kDUpvdTUsG7rSc/view?usp=sharing"
+							href="https://drive.google.com/file/d/1Vu0BFS2RgPZ_EUJVuJ5-K6sFqVwAIzvr/view?usp=sharing"
 							className="duration-200 text-black hover:text-zinc-400 hover:underline"
 						>
 							Questionaire
