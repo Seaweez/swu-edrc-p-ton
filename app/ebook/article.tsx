@@ -12,7 +12,7 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 	return (
 		<Link href={`${project.download}`}>
 			<article className="p-4 md:p-8">
-				<div className="flex justify-between gap-2 items-center">
+				<div className="flex justify-between gap-2 items-center mb-3">
 					<span className="text-xs duration-1000 text-white group-hover:text-white group-hover:border-white drop-shadow-orange">
 						{project.title ? (
 							<time dateTime={new Date().toISOString()}>
@@ -29,10 +29,14 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 						{Intl.NumberFormat("en-US", { notation: "compact" }).format(views)}
 					</span>
 				</div>
-				<h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-white group-hover:text-white font-display">
+				<span className="bg-blue-100 text-white text-2xl font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-white">
+					
+				{/* <h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-white group-hover:text-white font-display"> */}
 					{project.title}
-				</h2>
-				<p className="z-20 mt-4 text-sm  duration-1000 text-white group-hover:text-white">
+				{/* </h2> */}
+				</span>
+ 
+				<p className="z-20 mt-2 text-sm  duration-1000 text-white group-hover:text-white">
 					{project.description}
 				</p>
 			</article>
