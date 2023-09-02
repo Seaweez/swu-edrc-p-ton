@@ -8,7 +8,7 @@ const navigation = [
 	{ name: "E-book", href: "/ebook" },
 	{ name: "Board Game", href: "/boardgame" },
 	{ name: "Video", href: "/video" },
-	// { name: "Contact", href: "/contact" },
+	{ name: "Questionaire", href: "https://drive.google.com/file/d/1Vu0BFS2RgPZ_EUJVuJ5-K6sFqVwAIzvr/view?usp=sharing" },
 ];
 
 const socials = [
