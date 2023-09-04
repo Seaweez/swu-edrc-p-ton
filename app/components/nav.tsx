@@ -31,25 +31,25 @@ export const Navigation: React.FC = () => {
 							href="/ebook"
 							className="duration-200 text-black hover:text-zinc-400 hover:underline"
 						>
-							E-Book
+							อีบุ๊ค
 						</Link>
 						<Link
 							href="/boardgame"
 							className="duration-200 text-black hover:text-zinc-400 hover:underline"
 						>
-							Board Game
+							บอร์ดเกมส์
 						</Link>
 						<Link
 							href="/video"
 							className="duration-200 text-black hover:text-zinc-400 hover:underline"
 						>
-							Video
+							วีดีโอ
 						</Link>
 						<Link
 							href="https://drive.google.com/file/d/1Vu0BFS2RgPZ_EUJVuJ5-K6sFqVwAIzvr/view?usp=sharing"
 							className="duration-200 text-black hover:text-zinc-400 hover:underline"
 						>
-							Questionaire
+							บันทึกผลการใช้สื่อ
 						</Link>
 					</div>
 
