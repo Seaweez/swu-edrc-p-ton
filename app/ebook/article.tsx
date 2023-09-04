@@ -36,7 +36,7 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 				{/* </h2> */}
 				</span>
  
-				<p className="z-20 mt-2 text-sm  duration-1000 text-white group-hover:text-white">
+				<p className="z-20 mt-3 text-lg pl-1 duration-1000 text-white group-hover:text-white">
 					{project.description}
 				</p>
 			</article>

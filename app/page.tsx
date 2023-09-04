@@ -7,8 +7,8 @@ import { Card } from "./components/card";
 const navigation = [
 	{ name: "E-book", href: "/ebook" },
 	{ name: "Board Game", href: "/boardgame" },
-	{ name: "Video", href: "/video" },
-	{ name: "Questionaire", href: "https://drive.google.com/file/d/1Vu0BFS2RgPZ_EUJVuJ5-K6sFqVwAIzvr/view?usp=sharing" },
+	{ name: "Animation", href: "/video" },
+	{ name: "บันทึกผลการใช้สื่อ", href: "https://drive.google.com/file/d/1Vu0BFS2RgPZ_EUJVuJ5-K6sFqVwAIzvr/view?usp=sharing" },
 ];
 
 const socials = [

@@ -5,22 +5,14 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Article } from "./article";
 import { Redis } from "@upstash/redis";
-import { Eye } from "lucide-react";
-
-const VIDEO_LIST = true ? [] : [
-	{ title: `EP1 รู้กัน ไม่กลั่นแกล้ง`, href: `https://youtu.be/__rh4tAcMoA`, src: `https://www.youtube.com/embed/__rh4tAcMoA`, googleDrive: `https://drive.usercontent.google.com/download?id=1TyXLirPtgHlt3dp9jjWB6-BjevtcIwRV&export=download&authuser=0&confirm=t&uuid=5f1ecd5f-546b-4581-a02a-42082b8881c8&at=AC2mKKRQo74GDwmD9LjweeObYs2V:1690074993842`, views: 1023 },
-	{ title: `EP2 รู้แน่ แชร์ที่ตั้ง`, href: `https://youtu.be/fSf4YU5Z_64`, src: `https://www.youtube.com/embed/fSf4YU5Z_64`, googleDrive: `https://drive.usercontent.google.com/download?id=1-DaBzNn1M1XnRZJrhovxz1wNUCz4fQM4&export=download&authuser=0&confirm=t&uuid=14edbdf0-befc-4b64-b128-a1c92677b791&at=AC2mKKT5ZUne8gFwbDSWAmE1ZBuP:1690074998577`, views: 1412 },
-	{ title: `EP3 รู้ทัน ก่อนลงทุน`, href: `https://youtu.be/opd0WoAcQHo`, src: `https://www.youtube.com/embed/opd0WoAcQHo`, googleDrive: `https://drive.usercontent.google.com/download?id=1n89I4kA_uFNXwW9bVOugC_jhAwAFoICw&export=download&authuser=0&confirm=t&uuid=322efa42-f4c8-4e0e-9d15-c0f76b2643c8&at=AC2mKKQZTYA_WtaxOaYUug15DuY5:1690075002399`, views: 877 },
-	{ title: `EP4 รู้เท่า ก่อนเราซื้อ`, href: `https://youtu.be/W5hC7U84pys`, src: `https://www.youtube.com/embed/W5hC7U84pys`, googleDrive: `https://drive.usercontent.google.com/download?id=1O1h7jUvba1zflULHVXP3DOrM6D0R-6tJ&export=download&authuser=0&confirm=t&uuid=3b17e5e2-f89b-4343-a10d-119461530646&at=AC2mKKRU_WaDgKj2C_o5tivYZPG5:1690075010153`, views: 673 },
-	{ title: `EP5 รู้ก่อน ตอนจองตั๋ว`, href: `https://youtu.be/Cxx3EUlFukw`, src: `https://www.youtube.com/embed/Cxx3EUlFukw`, googleDrive: `https://drive.usercontent.google.com/download?id=1kfd-mgso6tMHn0Fgg6cmyB7rQwCJQNqx&export=download&authuser=0&confirm=t&uuid=eda72f98-2ef5-4a58-8e15-c69cd3a9b422&at=AC2mKKRaTcXce1HrcEiBAa_R1l7q:1690076643041`, views: 1223 }
-]
 
 const ARTICLE_LIST = [
-	{ title: `Chapter-01`, description: `ตอนที่ 1 เกมส์ออนไลน์`, download: `https://drive.google.com/file/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN/view?usp=drive_link`, date: ``, view: ``, preview: `/previews/chapter-1.png`, views: 1023 },
-	{ title: `Chapter-02`, description: `โดนหลอกเข้าแล้วเรา`, download: `https://drive.google.com/file/d/1ZMSmeSdHqqTDG1M7XaltaZD5lm7rUZvY/view?usp=drive_link`, date: ``, view: ``, preview: `/previews/chapter-2.png`, views: 1412 },
-	{ title: `Chapter-03`, description: `สงครามโซเชียล`, download: `https://drive.google.com/file/d/1BXSCTFpkkO83Pd3Jg7ZY7dWKfu1W1Krq/view?usp=drive_link`, date: ``, view: ``, preview: `/previews/chapter-3.png`, views: 877 },
-	{ title: `Chapter-04`, description: `ยุทธการปราบข่าวปลอม`, download: `https://drive.google.com/file/d/12vuz_NCIBLgTDDaGJEsRPspIn25KkkEo/view?usp=drive_link`, date: ``, view: ``, preview: `/previews/chapter-4.png`, views: 673 },
-	{ title: `Chapter-05`, description: `ฮีโร่ดิจิทัล ใครๆ ก็เป็นได้`, download: `https://drive.google.com/file/d/15Hj0VSPB9jqTfw6NuO9kvOYnSx0Xr_fG/view?usp=drive_link`, date: ``, view: ``, preview: `/previews/chapter-5.png`, views: 1223 }
+	{ title: `Chapter-01`, description: `ตอนที่ 1 เกมส์ออนไลน์`, download: `https://drive.google.com/file/d/1EWxIOSfCqvskQ3szYCndv3FM59X4jBxG/view?usp=sharing`, date: ``, view: ``, preview: `/previews/chapter-1.png`, views: 1023 },
+	{ title: `Chapter-02`, description: `โดนหลอกเข้าแล้วเรา`, download: `https://drive.google.com/file/d/1RRNiJyNC535ySQUDAqifPrH6Mam-9-aZ/view?usp=sharing`, date: ``, view: ``, preview: `/previews/chapter-2.png`, views: 1412 },
+	{ title: `Chapter-03`, description: `สงครามโซเชียล`, download: `https://drive.google.com/file/d/1T3K1DESu9yMXD3D8Me07YSALj7L9HfFZ/view?usp=sharing`, date: ``, view: ``, preview: `/previews/chapter-3.png`, views: 877 },
+	{ title: `Chapter-04`, description: `ยุทธการปราบข่าวปลอม`, download: `https://drive.google.com/file/d/1a_XJ1kBKBGwTgctoGJF8ayAgsxkWY4lu/view?usp=sharing`, date: ``, view: ``, preview: `/previews/chapter-4.png`, views: 673 },
+	{ title: `Chapter-05`, description: `ฮีโร่ดิจิทัล ใครๆ ก็เป็นได้`, download: `https://drive.google.com/file/d/1jxFOU0l4AOLjHdcMdaxyYKU3x1Q6f20_/view?usp=sharing`, date: ``, view: ``, preview: `/previews/chapter-5.png`, views: 1223 },
+	{ title: `All Chapters`, description: `รวม ตอนที่ 1-5`, download: `https://drive.google.com/file/d/1g9mW3-0TDj8mTy9J6KB2fwbn9LIOECjh/view?usp=sharing`, date: ``, view: ``, preview: `/previews/all-chapters.png`, views: 1223 }
 ]
 
 const redis = Redis.fromEnv();
@@ -75,7 +67,7 @@ export default async function ProjectsPage() {
 						<div className="grid grid-cols-1 gap-4">
 							<Card key={project.title}>
 								<div className="flex justify-center mt-8">
-									<img alt={`${project.title}`} className="irnPqc w-3/4 h-40" src={`${project.preview}`} data-iml="91125.90000000037" data-atf="true"></img>
+									<img alt={`${project.title}`} className="irnPqc w-3/4" src={`${project.preview}`} data-iml="91125.90000000037" data-atf="true"></img>
 								</div>
 
 								<Article project={project} views={project.views} />
