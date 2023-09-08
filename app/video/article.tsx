@@ -4,16 +4,23 @@ import { Eye, View } from "lucide-react";
 
 
 type Props = {
-	project: { title: string; description: string; download: string; date: string; view: string; preview: string; };
+	project: {
+		title: string;
+		href: string;
+		src: string;
+		googleDrive: string;
+		views: number;
+		description: string;
+	};
 	views: number;
 };
 
 export const Article: React.FC<Props> = ({ project, views }) => {
 	return (
-		<Link href={`${project.download}`}>
-			<article className="p-4 md:p-8">
-				<div className="flex justify-between gap-2 items-center">
-					<span className="text-xs duration-1000 text-zinc-200 group-hover:text-white group-hover:border-zinc-200 drop-shadow-orange">
+		<Link href={`${project.googleDrive}`}>
+			<article className="p-4 md:p-8 text-left">
+				<div className="flex justify-between gap-2 items-center mb-3">
+					<span className="text-xs duration-1000 text-white group-hover:text-white group-hover:border-white drop-shadow-orange">
 						{project.title ? (
 							<time dateTime={new Date().toISOString()}>
 								{Intl.DateTimeFormat(undefined, { dateStyle: "medium" }).format(
@@ -24,15 +31,19 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 							<span>SOON</span>
 						)}
 					</span>
-					<span className="text-white text-xs flex items-center gap-1">
+					<span className="text-white text-xs  flex items-center gap-1">
 						<Eye className="w-4 h-4" />{" "}
 						{Intl.NumberFormat("en-US", { notation: "compact" }).format(views)}
 					</span>
 				</div>
-				<h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
+				<span className="bg-blue-100 text-white text-2xl font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-white">
+
+					{/* <h2 className="z-20 text-xl font-medium duration-1000 lg:text-3xl text-white group-hover:text-white font-display"> */}
 					{project.title}
-				</h2>
-				<p className="z-20 mt-4 text-sm  duration-1000 text-zinc-400 group-hover:text-zinc-200">
+					{/* </h2> */}
+				</span>
+
+				<p className="z-20 mt-3 text-lg pl-1 duration-1000 text-white group-hover:text-white">
 					{project.description}
 				</p>
 			</article>
