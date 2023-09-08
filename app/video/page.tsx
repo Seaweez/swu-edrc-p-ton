@@ -82,7 +82,10 @@ export default async function ProjectsPage() {
 									// allowFullScreen
 								>
 								</iframe> */}
+								<div className="p-4">
+
 								<iframe src={`${video.src}`} width="480" height="480" ></iframe>
+								</div>
 
 								<div className="my-3">
 								<Article project={video} views={video.views} />
