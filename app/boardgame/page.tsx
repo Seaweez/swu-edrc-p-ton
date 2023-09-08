@@ -26,7 +26,9 @@ const ARTICLE_LIST = true ? [] : [
 
 const BOARDGAME_LIST = [
 	// { title: `E-social immunity BoardGame`, description: `บอร์ดเกมส์ ภูมิคุ้มกันโลกดิจิทัล`, download: `https://drive.google.com/file/d/1Sxf3xxiNyoh78bshaUUBqYCGUEkF_7uc/view?usp=sharing`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN=s320-w320-h200-k-p` },
+	{ title: `How to Play`, description: `วิธีการเล่น`, src: `/previews/howtoplay-13.png`, googleDrive: `https://drive.google.com/file/d/184iDKAZPZQ1BgrwizSqsROA0y3S_35JL/view?usp=sharing`, views: 1029 },
 	{ title: `E-social immunity Boardgame`, description: `บอร์ดเกมส์ ภูมิคุ้มกันโลกดิจิทัล`, src: `/previews/boardgame-icon.png`, googleDrive: `https://drive.google.com/file/d/1Sxf3xxiNyoh78bshaUUBqYCGUEkF_7uc/view?usp=sharing`, views: 1029 },
+	{ title: `Exmaple`, description: `Video สาธิตการเล่น`, src: `https://drive.google.com/file/d/126keWC7I-5zLRD7wfIcM5STpNiZc5Glj/preview`, googleDrive: `https://drive.google.com/file/d/126keWC7I-5zLRD7wfIcM5STpNiZc5Glj/view?usp=sharing`, views: 1029 },
 	// { title: `E-Social Immunity Manual`, description: `คู่มือ ภูมิคุ้มกันโลกดิจิทัล`, src: `/esocial-manual.jpeg`, googleDrive: `https://drive.google.com/file/d/1hK-Jg8q_FINqi7sKDNovfuvotaLiEra1/view?usp=sharing`, views: 343 },
 	// { title: `E-Social Vaccine Card`, description: `Card วัคซีน สำหรับ E-Social Immunity `, src: `/situation-card.jpeg`, googleDrive: `https://drive.google.com/file/d/1GA_iqqpgJ0YQ4IqIn93ggv-syCpY3t7V/view?usp=sharing`, views: 343 },
 	// { title: `E-Social Situation Card`, description: `Card สถานการณ์ สำหรับ E-Social Immunity`, src: `/vaccine-card.jpeg`, googleDrive: `https://drive.google.com/file/d/16NSVg7zUpAIxd9rknKv94DrK0NR9Zaio/view?usp=sharing`, views: 343 },
@@ -71,12 +73,12 @@ export default async function ProjectsPage() {
 						บอร์ดเกมส์
 					</h2>
 					<p className="mt-4 text-white">
-					สุดยอด บอร์ดเกมส์ ที่จะช่วยฝึกฝนให้ทุกคนอยู่เหนือโลกโซเชี่ยล
+						สุดยอด บอร์ดเกมส์ ที่จะช่วยฝึกฝนให้ทุกคนอยู่เหนือโลกโซเชี่ยล
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
 
-				<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-1 justify-center p-4 rounded">
+				<div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-3 justify-center p-4 rounded">
 
 					{/* <Card>
 						<iframe
@@ -100,11 +102,14 @@ export default async function ProjectsPage() {
 									</div>
 								</div>
 
-								<div className="flex justify-center mt-8">
-									<img alt={`${boardgame.title}`} className="irnPqc" src={`${boardgame.src}`} data-iml="91125.90000000037" data-atf="true"></img>
-								</div>
+								{boardgame.src.search(`drive.google.com`) >= 0 ?
+									(<iframe src={`${boardgame.src}`} width="480" height="480" allow="autoplay" ></iframe>) :
+									(<div className="flex justify-center mt-8">
+										<img alt={`${boardgame.title}`} className="irnPqc" src={`${boardgame.src}`} data-iml="91125.90000000037" data-atf="true"></img>
+									</div>)
+								}
 
-								<div className="my-3">
+								{boardgame.googleDrive && <div className="my-3">
 									<button className="bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center">
 										<svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
 										<Link href={`${boardgame.googleDrive}`} className="text-white" target="_blank" download>
@@ -115,7 +120,7 @@ export default async function ProjectsPage() {
 											</span>
 										</Link>
 									</button>
-								</div>
+								</div>}
 
 
 							</Card>
