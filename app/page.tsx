@@ -10,7 +10,7 @@ const navigation = [
 	{ name: "อนิเมชั่น", href: "/video" },
 	{ name: "บันทึกผลการใช้สื่อ", 
 	// href: "https://drive.google.com/file/d/1Vu0BFS2RgPZ_EUJVuJ5-K6sFqVwAIzvr/view?usp=sharing",
-	href: `/` }
+	href: `https://drive.google.com/file/d/1rjqP04U11GcrBQkW1HgGH1MEA-uHfXfD/view?usp=sharing` }
 ];
 
 const socials = [
