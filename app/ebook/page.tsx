@@ -59,6 +59,10 @@ export default async function ProjectsPage() {
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
 
+				<div className="">
+					<img alt={`cover-ebook`} className="mx-auto" src={`/cover-ebook.jpg`} data-iml="91125.90000000037" data-atf="true"></img>
+				</div>
+
 
 				<div className="grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3">
 					{/* {sorted

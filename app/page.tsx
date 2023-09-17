@@ -8,9 +8,11 @@ const navigation = [
 	{ name: "อีบุ๊ค", href: "/ebook" },
 	{ name: "บอร์ดเกมส์", href: "/boardgame" },
 	{ name: "อนิเมชั่น", href: "/video" },
-	{ name: "บันทึกผลการใช้สื่อ", 
-	// href: "https://drive.google.com/file/d/1Vu0BFS2RgPZ_EUJVuJ5-K6sFqVwAIzvr/view?usp=sharing",
-	href: `https://drive.google.com/file/d/1rjqP04U11GcrBQkW1HgGH1MEA-uHfXfD/view?usp=sharing` }
+	{
+		name: "บันทึกผลการใช้สื่อ",
+		// href: "https://drive.google.com/file/d/1Vu0BFS2RgPZ_EUJVuJ5-K6sFqVwAIzvr/view?usp=sharing",
+		href: `https://drive.google.com/file/d/1rjqP04U11GcrBQkW1HgGH1MEA-uHfXfD/view?usp=sharing`
+	}
 ];
 
 const socials = [
@@ -38,7 +40,7 @@ const campaignDescription = `เคล็ดลับ วิธีเอาต�
 
 export default function Home() {
 	return (
-		<div className="flex flex-col items-center w-screen xl:h-screen overflow-hidden bg-gradient-to-tl from-white via-zinc-600/20 to-white px-2 lg:px-0 align-middle">
+		<div className="flex flex-col items-center w-screen overflow-hidden bg-gradient-to-tl from-white via-zinc-600/20 to-white px-2 lg:px-0 align-middle">
 			<nav className="my-16 animate-fade-in">
 				<ul className="flex items-center justify-center gap-4">
 					{navigation.map((item) => (
@@ -58,7 +60,7 @@ export default function Home() {
 				quantity={100}
 			/>
 			<h1 className="z-10 text-2xl  text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
-			SWU - EDRC
+				SWU - EDRC
 			</h1>
 
 			{/* <div className="flex justify-center mt-8">
@@ -73,9 +75,13 @@ export default function Home() {
 				<img alt="Loading .." className="irnPqc" style={{ height: `10rem` }} src={`${`/tmf.png`}`} data-iml="91125.90000000037" data-atf="true"></img>
 			</div>
 
+			<div className="mt-16">
+				<img alt={`cover-boardgame`} className="mx-auto" src={`/cover-boardgame.jpg`} data-iml="91125.90000000037" data-atf="true"></img>
+			</div>
+
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
 			<div className="my-16 text-center animate-fade-in">
-				<h2 className="text-sm text-white ">
+				<h2 className="text-md text-white ">
 					{campaignDescription}
 					{/* Hi, my name is Ton Rattasapa Chu, I'm building serverless and open source
 					solutions at{" "}
@@ -103,22 +109,22 @@ export default function Home() {
 
 			{/* <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16"> */}
-					{socials.map((s) => (
-						// <Card>
-							<div className="w-full px-2 xl:px-4 text-righ fixed bottom">
-								<Link
-								href={s.href}
-								target="_blank"
-								className="float-right py-4"
-							>
-								{/* <span
+			{socials.map((s) => (
+				// <Card>
+				<div className="w-full px-2 xl:px-4 text-righ fixed bottom">
+					<Link
+						href={s.href}
+						target="_blank"
+						className="float-right py-4"
+					>
+						{/* <span
 									className="absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent"
 									aria-hidden="true"
 								/> */}
-								<span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange">
-									{s.icon}
-								</span>{" "}
-								{/* <div className="z-10 flex flex-col items-center">
+						<span className="relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange">
+							{s.icon}
+						</span>{" "}
+						{/* <div className="z-10 flex flex-col items-center">
 									<span className="text-xl font-medium duration-150 lg:text-3xl text-zinc-200 group-hover:text-white font-display">
 										{s.handle}
 									</span>
@@ -126,13 +132,13 @@ export default function Home() {
 										{s.label}
 									</span>
 								</div> */}
-							</Link>
-							</div>
-						// </Card>
-					))}
-				{/* </div>
+					</Link>
+				</div>
+				// </Card>
+			))}
+			{/* </div>
 			</div> */}
-			
+
 		</div>
 	);
 }
