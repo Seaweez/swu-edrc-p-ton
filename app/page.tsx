@@ -76,7 +76,7 @@ export default function Home() {
 			</div>
 
 			<div className="mt-16">
-				<img alt={`cover-boardgame`} className="mx-auto" src={`/cover-boardgame.jpg`} data-iml="91125.90000000037" data-atf="true"></img>
+				<img alt={`cover-boardgame`} className="mx-auto" src={`/cover-main.jpg`} data-iml="91125.90000000037" data-atf="true"></img>
 			</div>
 
 			<div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
