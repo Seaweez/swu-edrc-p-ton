@@ -109,7 +109,7 @@ export default async function ProjectsPage() {
 
 								{boardgame.src.search(`drive.google.com`) >= 0 ?
 									(<iframe src={`${boardgame.src}`} width="480" height="480" allow="autoplay" ></iframe>) :
-									(<div className="flex justify-center mt-8">
+									(<div className="flex justify-center mt-0">
 										<img alt={`${boardgame.title}`} className="irnPqc" src={`${boardgame.src}`} data-iml="91125.90000000037" data-atf="true"></img>
 									</div>)
 								}
