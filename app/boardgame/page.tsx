@@ -26,8 +26,8 @@ const ARTICLE_LIST = true ? [] : [
 
 const BOARDGAME_LIST = [
 	// { title: `E-social immunity BoardGame`, description: `บอร์ดเกมส์ ภูมิคุ้มกันโลกดิจิทัล`, download: `https://drive.google.com/file/d/1Sxf3xxiNyoh78bshaUUBqYCGUEkF_7uc/view?usp=sharing`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN=s320-w320-h200-k-p` },
-	{ title: `How to Play`, description: `วิธีการเล่น`, src: `/previews/howtoplay-13.png`, googleDrive: `https://drive.google.com/file/d/184iDKAZPZQ1BgrwizSqsROA0y3S_35JL/view?usp=sharing`, views: 1029 },
-	{ title: `E-social immunity Boardgame`, description: `บอร์ดเกมส์ ภูมิคุ้มกันโลกดิจิทัล`, src: `/previews/boardgame-icon.png`, googleDrive: `https://drive.google.com/file/d/1Sxf3xxiNyoh78bshaUUBqYCGUEkF_7uc/view?usp=sharing`, views: 1029 },
+	{ title: `How to Play`, description: `วิธีการเล่น`, src: `/previews/howtoplay-13.png`, googleDrive: `https://drive.google.com/file/d/1ZEShkvY1_49TCe7Ca-UMEnKWYTxAt-v6/view?usp=sharing`, views: 1029 },
+	{ title: `E-social immunity Boardgame Cards`, description: `การ์ด บอร์ดเกมส์ ภูมิคุ้มกันโลกดิจิทัล`, src: `/previews/boardgame-icon.png`, googleDrive: `https://drive.google.com/drive/folders/1G2Wn9lZ-QXSnfCBasF1Hn6e8oyDkqw91`, views: 1029 },
 	{ title: `Exmaple`, description: `Video สาธิตการเล่น`, src: `https://drive.google.com/file/d/126keWC7I-5zLRD7wfIcM5STpNiZc5Glj/preview`, googleDrive: `https://drive.google.com/file/d/126keWC7I-5zLRD7wfIcM5STpNiZc5Glj/view?usp=sharing`, views: 1029 },
 	// { title: `E-Social Immunity Manual`, description: `คู่มือ ภูมิคุ้มกันโลกดิจิทัล`, src: `/esocial-manual.jpeg`, googleDrive: `https://drive.google.com/file/d/1hK-Jg8q_FINqi7sKDNovfuvotaLiEra1/view?usp=sharing`, views: 343 },
 	// { title: `E-Social Vaccine Card`, description: `Card วัคซีน สำหรับ E-Social Immunity `, src: `/situation-card.jpeg`, googleDrive: `https://drive.google.com/file/d/1GA_iqqpgJ0YQ4IqIn93ggv-syCpY3t7V/view?usp=sharing`, views: 343 },
