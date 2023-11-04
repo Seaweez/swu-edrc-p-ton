@@ -16,19 +16,19 @@ const VIDEO_LIST = true ? [] : [
 ]
 
 const ARTICLE_LIST = true ? [] : [
-	{ title: `Chapter-01`, description: `ตอนที่ 1 เกมส์ออนไลน์`, download: `https://drive.google.com/file/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN=s320-w320-h200-k-p`, views: 1023 },
-	{ title: `Chapter-02`, description: `โดนหลอกเข้าแล้วเรา`, download: `https://drive.google.com/file/d/1ZMSmeSdHqqTDG1M7XaltaZD5lm7rUZvY/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1ZMSmeSdHqqTDG1M7XaltaZD5lm7rUZvY=s320-w320-h200-k-p`, views: 1412 },
-	{ title: `Chapter-03`, description: `สงครามโซเชียล`, download: `https://drive.google.com/file/d/1BXSCTFpkkO83Pd3Jg7ZY7dWKfu1W1Krq/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1BXSCTFpkkO83Pd3Jg7ZY7dWKfu1W1Krq=s320-w320-h200-k-p`, views: 877 },
-	{ title: `Chapter-04`, description: `ยุทธการปราบข่าวปลอม`, download: `https://drive.google.com/file/d/12vuz_NCIBLgTDDaGJEsRPspIn25KkkEo/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/12vuz_NCIBLgTDDaGJEsRPspIn25KkkEo=s320-w320-h200-k-p`, views: 673 },
-	{ title: `Chapter-05`, description: `ฮีโร่ดิจิทัล ใครๆ ก็เป็นได้`, download: `https://drive.google.com/file/d/15Hj0VSPB9jqTfw6NuO9kvOYnSx0Xr_fG/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/15Hj0VSPB9jqTfw6NuO9kvOYnSx0Xr_fG=s320-w320-h200-k-p`, views: 1223 }
+	{ title: `Chapter-01`, description: `ตอนที่ 1 เกมส์ออนไลน์`, download: `https://drive.google.com/file/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN=s320-w320-h200-k-p`, views: 6023 },
+	{ title: `Chapter-02`, description: `โดนหลอกเข้าแล้วเรา`, download: `https://drive.google.com/file/d/1ZMSmeSdHqqTDG1M7XaltaZD5lm7rUZvY/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1ZMSmeSdHqqTDG1M7XaltaZD5lm7rUZvY=s320-w320-h200-k-p`, views: 5412 },
+	{ title: `Chapter-03`, description: `สงครามโซเชียล`, download: `https://drive.google.com/file/d/1BXSCTFpkkO83Pd3Jg7ZY7dWKfu1W1Krq/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1BXSCTFpkkO83Pd3Jg7ZY7dWKfu1W1Krq=s320-w320-h200-k-p`, views: 5877 },
+	{ title: `Chapter-04`, description: `ยุทธการปราบข่าวปลอม`, download: `https://drive.google.com/file/d/12vuz_NCIBLgTDDaGJEsRPspIn25KkkEo/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/12vuz_NCIBLgTDDaGJEsRPspIn25KkkEo=s320-w320-h200-k-p`, views: 5673 },
+	{ title: `Chapter-05`, description: `ฮีโร่ดิจิทัล ใครๆ ก็เป็นได้`, download: `https://drive.google.com/file/d/15Hj0VSPB9jqTfw6NuO9kvOYnSx0Xr_fG/view?usp=drive_link`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/15Hj0VSPB9jqTfw6NuO9kvOYnSx0Xr_fG=s320-w320-h200-k-p`, views: 5223 }
 ]
 
 
 const BOARDGAME_LIST = [
 	// { title: `E-social immunity BoardGame`, description: `บอร์ดเกมส์ ภูมิคุ้มกันโลกดิจิทัล`, download: `https://drive.google.com/file/d/1Sxf3xxiNyoh78bshaUUBqYCGUEkF_7uc/view?usp=sharing`, date: ``, view: ``, preview: `https://lh3.google.com/u/0/d/1DfdIzZ1Su4mlipB1K2JKEJa95gVA-9dN=s320-w320-h200-k-p` },
-	{ title: `How to Play`, description: `วิธีการเล่น`, src: `/previews/howtoplay-13.png`, googleDrive: `https://drive.google.com/file/d/1ZEShkvY1_49TCe7Ca-UMEnKWYTxAt-v6/view?usp=sharing`, views: 1029 },
-	{ title: `E-social immunity Boardgame Cards`, description: `การ์ด บอร์ดเกมส์ ภูมิคุ้มกันโลกดิจิทัล`, src: `/previews/boardgame-icon.png`, googleDrive: `https://drive.google.com/drive/folders/1G2Wn9lZ-QXSnfCBasF1Hn6e8oyDkqw91`, views: 1029 },
-	{ title: `Exmaple`, description: `Video สาธิตการเล่น`, src: `https://drive.google.com/file/d/126keWC7I-5zLRD7wfIcM5STpNiZc5Glj/preview`, googleDrive: `https://drive.google.com/file/d/126keWC7I-5zLRD7wfIcM5STpNiZc5Glj/view?usp=sharing`, views: 1029 },
+	{ title: `How to Play`, description: `วิธีการเล่น`, src: `/previews/howtoplay-13.png`, googleDrive: `https://drive.google.com/file/d/1ZEShkvY1_49TCe7Ca-UMEnKWYTxAt-v6/view?usp=sharing`, views: 1329 },
+	{ title: `E-social immunity Boardgame Cards`, description: `การ์ด บอร์ดเกมส์ ภูมิคุ้มกันโลกดิจิทัล`, src: `/previews/boardgame-icon.png`, googleDrive: `https://drive.google.com/drive/folders/1G2Wn9lZ-QXSnfCBasF1Hn6e8oyDkqw91`, views: 1428 },
+	{ title: `Exmaple`, description: `Video สาธิตการเล่น`, src: `https://drive.google.com/file/d/126keWC7I-5zLRD7wfIcM5STpNiZc5Glj/preview`, googleDrive: `https://drive.google.com/file/d/126keWC7I-5zLRD7wfIcM5STpNiZc5Glj/view?usp=sharing`, views: 1324 },
 	// { title: `E-Social Immunity Manual`, description: `คู่มือ ภูมิคุ้มกันโลกดิจิทัล`, src: `/esocial-manual.jpeg`, googleDrive: `https://drive.google.com/file/d/1hK-Jg8q_FINqi7sKDNovfuvotaLiEra1/view?usp=sharing`, views: 343 },
 	// { title: `E-Social Vaccine Card`, description: `Card วัคซีน สำหรับ E-Social Immunity `, src: `/situation-card.jpeg`, googleDrive: `https://drive.google.com/file/d/1GA_iqqpgJ0YQ4IqIn93ggv-syCpY3t7V/view?usp=sharing`, views: 343 },
 	// { title: `E-Social Situation Card`, description: `Card สถานการณ์ สำหรับ E-Social Immunity`, src: `/vaccine-card.jpeg`, googleDrive: `https://drive.google.com/file/d/16NSVg7zUpAIxd9rknKv94DrK0NR9Zaio/view?usp=sharing`, views: 343 },
@@ -121,7 +121,7 @@ export default async function ProjectsPage() {
 											<span>Download</span>
 											<span className="text-white text-xs  flex items-center gap-1">
 												<Eye className="w-4 h-4" />{" "}
-												{Intl.NumberFormat("en-US", { notation: "compact" }).format(boardgame.views)}
+												{Intl.NumberFormat("en-US").format(boardgame.views)}
 											</span>
 										</Link>
 									</button>

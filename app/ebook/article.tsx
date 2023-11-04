@@ -1,6 +1,6 @@
 import type { Project } from "@/.contentlayer/generated";
 import Link from "next/link";
-import { Eye, View } from "lucide-react";
+import { Download, Eye, View } from "lucide-react";
 
 
 type Props = {
@@ -24,9 +24,13 @@ export const Article: React.FC<Props> = ({ project, views }) => {
 							<span>SOON</span>
 						)}
 					</span>
+					{/* <span className="text-white text-xs  flex items-center gap-1">
+						<Eye className="w-4 h-4" />{" "}
+						{Intl.NumberFormat("en-US").format(views)}
+					</span> */}
 					<span className="text-white text-xs  flex items-center gap-1">
 						<Eye className="w-4 h-4" />{" "}
-						{Intl.NumberFormat("en-US", { notation: "compact" }).format(views)}
+						{Intl.NumberFormat("en-US").format(views)}
 					</span>
 				</div>
 				<span className="bg-blue-100 text-white text-2xl font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-white">

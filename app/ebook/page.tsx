@@ -5,12 +5,13 @@ import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Article } from "./article";
 import { Redis } from "@upstash/redis";
+import { Download, Eye } from "lucide-react";
 
 const ARTICLE_LIST = [
 	{ title: `Chapter-01`, description: `ตอนที่ 1 เกมส์ออนไลน์`, download: `https://drive.google.com/file/d/1EWxIOSfCqvskQ3szYCndv3FM59X4jBxG/view?usp=sharing`, date: ``, view: ``, preview: `/previews/chapter-1.png`, views: 1023 },
 	{ title: `Chapter-02`, description: `โดนหลอกเข้าแล้วเรา`, download: `https://drive.google.com/file/d/1RRNiJyNC535ySQUDAqifPrH6Mam-9-aZ/view?usp=sharing`, date: ``, view: ``, preview: `/previews/chapter-2.png`, views: 1412 },
-	{ title: `Chapter-03`, description: `สงครามโซเชียล`, download: `https://drive.google.com/file/d/1T3K1DESu9yMXD3D8Me07YSALj7L9HfFZ/view?usp=sharing`, date: ``, view: ``, preview: `/previews/chapter-3.png`, views: 877 },
-	{ title: `Chapter-04`, description: `ยุทธการปราบข่าวปลอม`, download: `https://drive.google.com/file/d/1a_XJ1kBKBGwTgctoGJF8ayAgsxkWY4lu/view?usp=sharing`, date: ``, view: ``, preview: `/previews/chapter-4.png`, views: 673 },
+	{ title: `Chapter-03`, description: `สงครามโซเชียล`, download: `https://drive.google.com/file/d/1T3K1DESu9yMXD3D8Me07YSALj7L9HfFZ/view?usp=sharing`, date: ``, view: ``, preview: `/previews/chapter-3.png`, views: 1632 },
+	{ title: `Chapter-04`, description: `ยุทธการปราบข่าวปลอม`, download: `https://drive.google.com/file/d/1a_XJ1kBKBGwTgctoGJF8ayAgsxkWY4lu/view?usp=sharing`, date: ``, view: ``, preview: `/previews/chapter-4.png`, views: 1173 },
 	{ title: `Chapter-05`, description: `ฮีโร่ดิจิทัล ใครๆ ก็เป็นได้`, download: `https://drive.google.com/file/d/1jxFOU0l4AOLjHdcMdaxyYKU3x1Q6f20_/view?usp=sharing`, date: ``, view: ``, preview: `/previews/chapter-5.png`, views: 1223 },
 	{ title: `All Chapters`, description: `รวม ตอนที่ 1-5`, download: `https://drive.google.com/file/d/1g9mW3-0TDj8mTy9J6KB2fwbn9LIOECjh/view?usp=sharing`, date: ``, view: ``, preview: `/previews/all-chapters.png`, views: 1223 }
 ]
@@ -75,6 +76,18 @@ export default async function ProjectsPage() {
 								</div>
 
 								<Article project={project} views={project.views} />
+								<div className="flex justify-center mb-4">
+									<button className="bg-blue-300 hover:bg-blue-400 text-blue-800 font-bold py-2 px-4 rounded inline-flex items-center">
+										<svg className="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z" /></svg>
+										<Link href={`${project.download}`} className="text-white" target="_blank" download>
+											<span>Download</span>
+											<span className="text-white text-xs  flex items-center gap-1">
+												<Download className="w-4 h-4" />{" "}
+												{Intl.NumberFormat("en-US").format(project.views)}
+											</span>
+										</Link>
+									</button>
+								</div>
 							</Card>
 						</div>
 					))}
